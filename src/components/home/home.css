@@ -1,0 +1,61 @@
+/* Container for the whole Home section */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  /* Make it fill the viewport height */
+  min-height: 100vh;
+  
+  /* Background styling */
+  background-color: #f4f7f6;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  
+  padding: 40px;
+  color: #333;
+}
+
+/* Styling the main heading */
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling the paragraph text */
+.home-container p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* An optional Call to Action button */
+.home-cta-button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Adding a simple animation similar to Angular's entry animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.home-container {
+  animation: fadeIn 0.8s ease-out;
+}
