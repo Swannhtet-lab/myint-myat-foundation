@@ -5,7 +5,6 @@ import logoImg from './assets/logo.jpg';
 import { 
   BookOpen, 
   GraduationCap, 
- 
   Phone,     // Added
   Mail,      // Added
   MapPin,    // Added
