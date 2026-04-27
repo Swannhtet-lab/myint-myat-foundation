@@ -59,6 +59,52 @@ function App() {
           <Library />
         </Suspense>
       </main>
+
+      <footer className="footer-section">
+        <div className="footer-inner-container">
+          <div className="footer-header">
+            <h2>မြင့်မြတ် ပညာရေးဖောင်ဒေးရှင်း</h2>
+            <div className="footer-underline" />
+          </div>
+
+          <div className="footer-grid">
+            <div>
+              <div className="footer-brand-flex">
+                <div className="footer-logo-circle">
+                  <img src={logoImg} alt="Myanmar Myat Foundation logo" />
+                </div>
+                <div>
+                  <div className="brand-name-main">မြင့်မြတ် Foundation</div>
+                  <p>"ဖူးပုရစ်တိုင်းပွင့်ရမည် - ပွင့်သောပန်းတိုင်းမွှေးရမည်"</p>
+                </div>
+              </div>
+              <p>
+                Empowering students with learning, leadership, and community-focused education.
+              </p>
+            </div>
+
+            <div className="contact-list">
+              <div className="contact-row">
+                <span className="contact-label">Email:</span>
+                <span className="contact-value">info@myintmyat.org</span>
+              </div>
+              <div className="contact-row">
+                <span className="contact-label">Phone:</span>
+                <span className="contact-value">+95 9 123 456 789</span>
+              </div>
+              <div className="contact-row">
+                <span className="contact-label">Address:</span>
+                <span className="contact-value">Yangon, Myanmar</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <span>© 2026 မြင့်မြတ် Foundation. All rights reserved.</span>
+            <span>Designed to support education and community growth.</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
