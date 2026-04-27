@@ -1,8 +1,8 @@
 import React from 'react';
 import { Award, ChevronRight } from 'lucide-react';
 import './Home.css';
-import logoImg from '../../assets/logo.jpg';
-
+import logoImg from '../../assets/logo.png';
+import Iniation from '../initation/initation';
 
 const Home = () => {
   const scrollToSection = (id) => {
@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <div className="home-wrapper">
+    <div id="home" className="home-wrapper">
       {/* Hero Section */}
       <section className="hero-section">
         {/* Abstract pattern background */}
@@ -48,7 +48,7 @@ const Home = () => {
           
           <div className="hero-cta-container">
             <button 
-              onClick={() => scrollToSection('history')}
+              onClick={() => scrollToSection('initation')}
               className="hero-btn"
             >
               Get Started
