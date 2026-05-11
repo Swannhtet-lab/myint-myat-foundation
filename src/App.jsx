@@ -1,24 +1,7 @@
-import React, { lazy, Suspense, useState, useEffect } from 'react';
+import React, { Suspense, lazy, useState, useEffect } from 'react';
 import './App.css';
-import logoImg from './assets/logo.jpg';
+import logoImg from './assets/logo.png';
 
-import { 
-  BookOpen, 
-  GraduationCap, 
- 
-  Phone,     // Added
-  Mail,      // Added
-  MapPin,    // Added
-  Target, 
-  HeartHandshake, 
-  ChevronRight,
-  Menu,
-  X,
-  Award,
-  BookMarked
-} from 'lucide-react';
-
-// Lazy load the sections
 const Home = lazy(() => import('./components/home/home'));
 const Tasks = lazy(() => import('./components/tasks/tasks'));
 const Iniation = lazy(() => import('./components/initation/initation'));
@@ -30,100 +13,98 @@ const Library = lazy(() => import('./components/library/Library'));
 function App() {
   const [scrolled, setScrolled] = useState(false);
 
-  // Add scroll listener to change navbar background
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 20);
     };
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="App">
-      <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
+      <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
         <div className="nav-container">
-          <div className="nav-brand">
-            <img src={logoImg} alt="Logo" className="nav-logo-wrapper" />
-            <div className="brand-text">
+          <a className="nav-brand">
+            <span className="nav-logo-wrapper">
+              <img className="nav-logo-img" src={logoImg} alt="Myanmar Myat Foundation logo" />
+            </span>
+            <span className="brand-text">
               <span className="brand-title">မြင့်မြတ်</span>
               <span className="brand-subtitle">ပညာရေးဖောင်ဒေးရှင်း</span>
-            </div>
-          </div>
-          
-          <div className="nav-links">
+            </span>
+          </a>
+
+          <nav className="nav-links">
+            
             <a href="#initation">ဖြစ်ပေါ်လာပုံ</a>
-            <a href="#tasks">ဆောင်ရွက်ချက်များ</a>
+            <a href="#tasks">ဆောင်ရွက်ချက်များ</a> 
             <a href="#goal">ရည်ရွယ်ချက်များ</a>
-            <a href="#library">စာကြည့်တိုက်</a>
             <a href="#graduates">ဘွဲ့ရများ</a>
-            <a href="#gallery">ပုံပြခန်း</a>
+            <a href="#gallery">ဓာတ်ပုံများ</a>
+            <a href="#library">စာကြည့်တိုက်</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Home />
+          <Tasks />
+          <Iniation/>
+          <Goal />
+          <Graduates />
+          <Gallery />
+          <Library />
+        </Suspense>
+      </main>
+
+      <footer className="footer-section">
+        <div className="footer-inner-container">
+          <div className="footer-header">
+            <h2>မြင့်မြတ် ပညာရေးဖောင်ဒေးရှင်း</h2>
+            <div className="footer-underline" />
           </div>
-        </div>
-      </nav>
 
-      <Suspense fallback={<div className="loading-screen">ဖော်ပြပါ အကြောင်းအရာများကို ခဏတာ စောင့်ဆိုင်းပေးပါ...</div>}>
-        <div id="home"><Home /></div>
-        <div id="initation"><Iniation /></div>
-        <div id="tasks"><Tasks /></div>
-        <div id="goal"><Goal /></div>
-        <div id="library"><Library /></div>
-        <div id="graduates"><Graduates /></div>
-        <div id="gallery"><Gallery /></div>
-      </Suspense>
-      
-     {/* Contact & Footer Section */}
-<footer id="contact" className="footer-section">
-      <div className="footer-inner-container">
-        
-        <div className="footer-header">
-          <h2>ဆက်သွယ်ရန်</h2>
-          <div className="footer-underline"></div>
-        </div>
-
-        <div className="footer-grid">
-          {/* Brand Info */}
-          <div className="brand-info">
-            <div className="footer-brand-flex">
-              <div className="footer-logo-circle">
-                <img src={logoImg} alt="Logo" />
+          <div className="footer-grid">
+            <div>
+              <div className="footer-brand-flex">
+                <div className="footer-logo-circle">
+                  <img src={logoImg} alt="Myanmar Myat Foundation logo" />
+                </div>
+                <div>
+                  <div className="brand-name-main">မြင့်မြတ် Foundation</div>
+                  <p>"ဖူးပုရစ်တိုင်းပွင့်ရမည် - ပွင့်သောပန်းတိုင်းမွှေးရမည်"</p>
+                </div>
               </div>
-              <div>
-                <h2 className="brand-name-main">မြင့်မြတ်</h2>
-                <p className="brand-sub">ပညာရေးဖောင်ဒေးရှင်း</p>
+              <p>
+                Empowering students with learning, leadership, and community-focused education.
+              </p>
+            </div>
+
+            <div className="contact-list">
+              <div className="contact-row">
+                <span className="contact-label">Email:</span>
+                <span className="contact-value">info@myintmyat.org</span>
+              </div>
+              <div className="contact-row">
+                <span className="contact-label">Phone:</span>
+                <span className="contact-value">+95 9 123 456 789</span>
+              </div>
+              <div className="contact-row">
+                <span className="contact-label">Address:</span>
+                <span className="contact-value">Yangon, Myanmar</span>
               </div>
             </div>
-            <p className="tagline">နိုင်ငံဖွံ့ဖြိုးတိုးတက်ဖို့ ပညာရေးကိုအားပေးစို့။</p>
           </div>
 
-          {/* Contact List */}
-          <div className="contact-list">
-            <div className="contact-row">
-              <div className="icon-box"><Mail size={20} /></div>
-              <div>
-                <p className="label">အီးမေးလ်</p>
-                <p className="value">myintmyatfoundation@gmail.com</p>
-              </div>
-            </div>
-            <div className="contact-row">
-              <div className="icon-box"><Phone size={20} /></div>
-              <div>
-                <p className="label">ဖုန်းနံပါတ်</p>
-                <p className="value">09-5012485, 09-40255183</p>
-              </div>
-            </div>
+          <div className="footer-bottom">
+            <span>© 2026 မြင့်မြတ် Foundation. All rights reserved.</span>
+            <span>Designed to support education and community growth.</span>
           </div>
         </div>
-
-        <div className="footer-bottom">
-          <p>@ Copyright မြင့်မြတ် ပညာရေးဖောင်ဒေးရှင်း</p>
-          <div className="legal-links">
-             <a href="#">Privacy Policy</a>
-             <a href="#">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
     </div>
   );
 }
