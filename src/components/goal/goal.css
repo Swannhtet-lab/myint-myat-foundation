@@ -1,0 +1,70 @@
+.home-section {
+  background-color: #0f4d4a; 
+  color: white;
+  min-height: 100vh;
+  padding: 80px 10%;
+  font-family: 'Pyidaungsu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goal-wrapper {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+.goal-header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.goal-title {
+  color: #f39c12; 
+  font-size: clamp(24px, 4vw, 36px);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.goal-intro {
+  line-height: 1.8;
+  font-size: 18px;
+  opacity: 0.9;
+}
+.goal-grid {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.card {
+  border: 1px solid #2a7a76;
+  border-radius: 25px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+.card-number {
+  color: #f39c12;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-text {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+@media (max-width: 968px) {
+  .goal-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .goal-grid {
+    grid-template-columns: 1fr;
+  }
+}
