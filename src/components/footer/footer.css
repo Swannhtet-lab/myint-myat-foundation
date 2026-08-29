@@ -1,0 +1,168 @@
+﻿/* Footer Component Styles (extends App.css footer styles for component scope) */
+
+.footer-section {
+  background-color: #1a1f2c;
+  color: #cbd5e1;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-inner-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.footer-header h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: 'Pyidaungsu', 'Padauk', sans-serif;
+}
+
+.footer-underline {
+  height: 0.25rem;
+  width: 8rem;
+  background-color: #fbbf24;
+  margin: 0 auto;
+  border-radius: 9999px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.footer-brand-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo-circle {
+  width: 5rem;
+  height: 5rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 2px solid #334155;
+  flex-shrink: 0;
+}
+
+.footer-logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-name-main {
+  color: #fbbf24;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Pyidaungsu', 'Padauk', sans-serif;
+}
+
+.brand-name-sub {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  font-family: 'Pyidaungsu', 'Padauk', sans-serif;
+}
+
+.footer-tagline {
+  color: #cbd5e1;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-contact-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-family: 'Pyidaungsu', 'Padauk', sans-serif;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-box {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-text-sentence {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #f1f5f9;
+  font-family: 'Pyidaungsu', 'Padauk', sans-serif;
+  flex-wrap: wrap;
+}
+
+.contact-label {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contact-value {
+  color: #cbd5e1;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(51, 65, 85, 0.6);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #64748b;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+  }
+}
