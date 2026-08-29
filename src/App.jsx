@@ -37,9 +37,8 @@ function App() {
           </a>
 
           <nav className="nav-links">
-            
             <a href="#initation">ဖြစ်ပေါ်လာပုံ</a>
-            <a href="#tasks">ဆောင်ရွက်ချက်များ</a> 
+            <a href="#tasks">ဆောင်ရွက်ချက်များ</a>
             <a href="#goal">ရည်ရွယ်ချက်များ</a>
             <a href="#graduates">ဘွဲ့ရများ</a>
             <a href="#gallery">ဓာတ်ပုံများ</a>
@@ -74,12 +73,12 @@ function App() {
                   <img src={logoImg} alt="Myanmar Myat Foundation logo" />
                 </div>
                 <div>
-                  <div className="brand-name-main">မြင့်မြတ် Foundation</div>
+                  <div className="brand-name-main">မြင့်မြတ် ပညာရေးဖောင်ဒေးရှင်း</div>
                   <p>"ဖူးပုရစ်တိုင်းပွင့်ရမည် - ပွင့်သောပန်းတိုင်းမွှေးရမည်"</p>
                 </div>
               </div>
               <p>
-                Empowering students with learning, leadership, and community-focused education.
+                awdfjkasdf9qweoir werjoire
               </p>
             </div>
 
@@ -94,14 +93,14 @@ function App() {
               </div>
               <div className="contact-row">
                 <span className="contact-label">Address:</span>
-                <span className="contact-value">Yangon, Myanmar</span>
+                <span className="contact-value">ရန်ကုန်၊ မြန်မာနိုင်ငံ</span>
               </div>
             </div>
           </div>
 
           <div className="footer-bottom">
-            <span>© 2026 မြင့်မြတ် Foundation. All rights reserved.</span>
-            <span>Designed to support education and community growth.</span>
+            <span>© 2026 မြင့်မြတ် ပညာရေးဖောင်ဒေးရှင်း။ မူပိုင်ခွင့်အားလုံးကို ကာကွယ်ထားသည်။</span>
+            <span>ပညာရေးနှင့်အသိုက်အဝန်းတိုးတက်မှုကို ထောက်ခံရန် ဒီဇိုင်းထုတ်ထားပါသည်။</span>
           </div>
         </div>
       </footer>
