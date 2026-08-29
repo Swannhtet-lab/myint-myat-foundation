@@ -1,0 +1,492 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Noto Sans Myanmar",
+    "Myanmar Text",
+    Arial,
+    sans-serif;
+
+  background: #ffffff;
+  color: #17243a;
+  border: 2px solid #1d9d96;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.gallery-page {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 24px 0 40px;
+}
+
+.gallery-header-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 25px;
+  margin-bottom: 18px;
+}
+
+.gallery-header-row h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #18263c;
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.gallery-container {
+  max-width: 100%;
+  padding: 32px 30px 80px;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.back-button {
+  border: none;
+  background: transparent;
+
+  color: #087e78;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.back-button span {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.back-button:hover {
+  color: #075f5b;
+}
+
+
+/* =========================================
+   PAGE HEADING
+========================================= */
+
+.page-heading {
+  margin-left: 25px;
+  margin-top: 17px;
+}
+
+.page-heading h1 {
+  font-size: 30px;
+
+  font-weight: 600;
+
+  color: #18263c;
+
+  letter-spacing: -0.5px;
+}
+
+.page-heading p {
+  margin-top: 10px;
+
+  font-size: 13px;
+
+  color: #777777;
+}
+
+
+
+
+/* =========================================
+   CATEGORY TABS
+========================================= */
+
+.category-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 35px;
+
+  background: #f5f7f7;
+
+  border-bottom: 1px solid #d9e2e1;
+
+  border-radius: 8px 8px 0 0;
+
+  overflow: hidden;
+}
+
+
+/* Individual tab */
+
+.category-tab {
+  position: relative;
+
+  height: 65px;
+
+  border: none;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  color: #667575;
+
+  cursor: pointer;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+/* Hover */
+
+.category-tab:hover {
+  background: #edf3f2;
+
+  color: #176f6b;
+}
+
+
+/* Active tab */
+
+.category-tab.active {
+  background: #ffffff;
+
+  color: #087e78;
+
+  font-weight: 600;
+}
+
+
+/* Google-style active indicator */
+
+.category-tab.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 15%;
+  right: 15%;
+  bottom: 0;
+
+  height: 3px;
+
+  background: #087e78;
+
+  border-radius: 3px 3px 0 0;
+}
+/* =========================================
+   FILTER AREA
+========================================= */
+
+.filter-area {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   YEAR SELECT
+========================================= */
+
+.year-select-wrapper {
+  width: 140px;
+  height: 44px;
+
+  border: 1px solid #777777;
+
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+}
+
+
+/* ---------- Calendar ---------- */
+
+.calendar-icon {
+  width: 32px;
+  height: 32px;
+
+  margin-left: 8px;
+
+  position: relative;
+
+  border: 2px solid #111111;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-top {
+  height: 8px;
+
+  border-bottom: 2px solid #111111;
+
+  position: relative;
+}
+
+.calendar-top::before,
+.calendar-top::after {
+  content: "";
+
+  position: absolute;
+
+  top: -5px;
+
+  width: 3px;
+  height: 8px;
+
+  background: #111111;
+}
+
+.calendar-top::before {
+  left: 6px;
+}
+
+.calendar-top::after {
+  right: 6px;
+}
+
+.calendar-body {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 3px;
+
+  padding: 4px;
+}
+
+.calendar-body span {
+  width: 6px;
+  height: 4px;
+
+  background: #111111;
+}
+
+
+/* ---------- Select ---------- */
+
+.year-select-wrapper select {
+  flex: 1;
+
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  padding-left: 8px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  color: #333333;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   GALLERY GRID
+========================================= */
+
+.gallery-grid {
+  margin-top: 35px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   GALLERY CARD
+========================================= */
+
+.gallery-card {
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------- Image ---------- */
+
+.image-wrapper {
+  width: 100%;
+
+  height: 220px;
+
+  overflow: hidden;
+
+  background: #eeeeee;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+
+/* ---------- Card Text ---------- */
+
+.gallery-card-content {
+  padding: 13px 15px;
+}
+
+.gallery-card-content h3 {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #246e69;
+}
+
+
+/* =========================================
+   EMPTY GALLERY
+========================================= */
+
+.empty-gallery {
+  grid-column: 1 / -1;
+
+  min-height: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #888888;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .gallery-container {
+    padding: 25px 15px 60px;
+  }
+
+
+  .page-heading,
+  .back-button {
+    margin-left: 0;
+  }
+
+
+  .page-heading h1 {
+    font-size: 24px;
+  }
+
+
+  .view-tabs {
+    padding-left: 0;
+  }
+
+
+  .category-tabs {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 5px;
+  }
+
+  .category-tab {
+    height: 65px;
+
+    font-size: 12px;
+  }
+
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .image-wrapper {
+    height: 210px;
+  }
+}

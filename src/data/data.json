@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "year": 2025,
+    "category": "donations",
+    "title": "ကျောင်းလှုပ်ရှားမှု",
+    "image": "src/assets/0-02-06-3b011b1d5890a9a37b09fb775aa4f5365e6b678e095fd5f1e155851fe4700ec7_1da9d82a39f99a17.jpg"
+  },
+  {
+    "id": 2,
+    "year": 2025,
+    "category": "schoolarship",
+    "title": "ကျောင်းလှုပ်ရှားမှု",
+    "image": "src/assets/0-02-06-3b011b1d5890a9a37b09fb775aa4f5365e6b678e095fd5f1e155851fe4700ec7_1da9d82a39f99a17.jpg"
+  },
+  {
+    "id": 3,
+    "year": 2025,
+    "category": "grudates",
+    "title": "ပညာရေးလှုပ်ရှားမှု",
+    "image": "/images/gallery3.jpg"
+  },
+  {
+    "id": 4,
+    "year": 2025,
+    "category": "library",
+    "title": "အခမ်းအနား",
+    "image": "/images/gallery4.jpg"
+  },
+  {
+    "id": 5,
+    "year": 2024,
+    "category": "donations",
+    "title": "ကျောင်းလှုပ်ရှားမှု",
+    "image": "/images/gallery5.jpg"
+  },
+   {
+    "id": 6,
+    "year": 2024,
+    "category": "donations",
+    "title": "ကျောင်းလှုပ်ရှားမှု",
+    "image": "/images/gallery5.jpg"
+  },
+    {
+        "id": 7,
+        "year": 2024,
+        "category": "donations",
+        "title": "ကျောင်းလှုပ်ရှားမှု",
+        "image": "/images/gallery5.jpg"
+    },
+  {
+        "id": 7,
+        "year": 2024,
+        "category": "donations",
+        "title": "ကျောင်းလှုပ်ရှားမှု",
+        "image": "src/assets/1.jpg"
+    }
+]

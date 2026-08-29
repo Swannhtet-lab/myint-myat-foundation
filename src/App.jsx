@@ -1,6 +1,8 @@
 ﻿import React, { Suspense, lazy, useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import logoImg from './assets/logo.png';
+import Footer from './components/footer/footer';
 
 const Home = lazy(() => import('./components/home/home'));
 const Tasks = lazy(() => import('./components/tasks/tasks'));
@@ -8,9 +10,10 @@ const Iniation = lazy(() => import('./components/initation/initation'));
 const Goal = lazy(() => import('./components/goal/goal'));
 const Graduates = lazy(() => import('./components/graduates/graduates'));
 const Gallery = lazy(() => import('./components/gallery/gallery'));
+const GalleryPage = lazy(() => import('./components/gallery/AllGalleryPage'));
 const Library = lazy(() => import('./components/library/Library'));
 
-function App() {
+function HomeLayout() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -26,7 +29,7 @@ function App() {
     <div className="App">
       <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
         <div className="nav-container">
-          <a className="nav-brand">
+          <a className="nav-brand" href="#home">
             <span className="nav-logo-wrapper">
               <img className="nav-logo-img" src={logoImg} alt="Myanmar Myat Foundation logo" />
             </span>
@@ -58,7 +61,18 @@ function App() {
           <Library />
         </Suspense>
       </main>
+
+      <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomeLayout />} />
+      <Route path="/gallery" element={<GalleryPage />} />
+    </Routes>
   );
 }
 
