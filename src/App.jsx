@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useState, useEffect } from 'react';
+﻿import React, { Suspense, lazy, useState, useEffect } from 'react';
 import './App.css';
 import logoImg from './assets/logo.png';
 
@@ -37,9 +37,8 @@ function App() {
           </a>
 
           <nav className="nav-links">
-            
             <a href="#initation">ဖြစ်ပေါ်လာပုံ</a>
-            <a href="#tasks">ဆောင်ရွက်ချက်များ</a> 
+            <a href="#tasks">ဆောင်ရွက်ချက်များ</a>
             <a href="#goal">ရည်ရွယ်ချက်များ</a>
             <a href="#graduates">ဘွဲ့ရများ</a>
             <a href="#gallery">ဓာတ်ပုံများ</a>
@@ -52,13 +51,60 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           <Home />
           <Tasks />
-          <Iniation/>
+          <Iniation />
           <Goal />
           <Graduates />
           <Gallery />
           <Library />
         </Suspense>
       </main>
+
+      <footer className="footer-section">
+        <div className="footer-inner-container">
+          <div className="footer-header">
+            <h2>မြင့်မြတ် ပညာရေးဖောင်ဒေးရှင်း</h2>
+            <div className="footer-underline" />
+          </div>
+
+          <div className="footer-grid">
+            <div>
+              <div className="footer-brand-flex">
+                <div className="footer-logo-circle">
+                  <img src={logoImg} alt="Myanmar Myat Foundation logo" />
+                </div>
+                <div>
+                  <div className="brand-name-main">မြင့်မြတ် ပညာရေးဖောင်ဒေးရှင်း</div>
+                  <p>"ဖူးပုရစ်တိုင်းပွင့်ရမည် - ပွင့်သောပန်းတိုင်းမွှေးရမည်"</p>
+                </div>
+              </div>
+              <p>
+                ကျောင်းသားများအား သင်ယူမှု၊ ခေါင်းဆောင်မှုနှင့် အဖွဲ့အစည်းအပေါ်အခြေပြုသော ပညာရေးဖြင့်
+                ခွန်အားပေးပါသည်။
+              </p>
+            </div>
+
+            <div className="contact-list">
+              <div className="contact-row">
+                <span className="contact-label">email:</span>
+                <span className="contact-value">info@myintmyat.org</span>
+              </div>
+              <div className="contact-row">
+                <span className="contact-label">ဖုန်း:</span>
+                <span className="contact-value">+95 9 123 456 789</span>
+              </div>
+              <div className="contact-row">
+                <span className="contact-label">လိပ်စာ:</span>
+                <span className="contact-value">ရန်ကုန်၊ မြန်မာနိုင်ငံ</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <span>© 2026 မြင့်မြတ် ပညာရေးဖောင်ဒေးရှင်း။ မူပိုင်ခွင့်အားလုံးကို ကာကွယ်ထားသည်။</span>
+            <span>ပညာရေးနှင့်အသိုက်အဝန်းတိုးတက်မှုကို ထောက်ခံရန် ဒီဇိုင်းထုတ်ထားပါသည်။</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
