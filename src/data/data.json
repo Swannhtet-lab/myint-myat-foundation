@@ -49,10 +49,24 @@
         "image": "/images/gallery5.jpg"
     },
   {
-        "id": 7,
+        "id": 8,
         "year": 2024,
         "category": "donations",
         "title": "ကျောင်းလှုပ်ရှားမှု",
         "image": "src/assets/1.jpg"
-    }
+  },
+  {
+     "id": 9,
+      "year": 2024,
+      "category": "donations",
+      "title": "ကျောင်းလှုပ်ရှားမှု",
+      "image": "src/assets/0-02-06-36d50a52a6da980529c2ee8999116c3f808a05d96d5022088b7b763b4adbfe66_68a2e5f7b67a5911.jpg"
+  },
+  {
+    "id": 10,
+      "year": 2024,
+      "category": "library",
+      "title": "စာကြည့်တိုက်",
+      "image": "src/assets/0-02-06-40f953ef6ddbcb5c473816913d94bd6952284c0da1be8e4f477263634970eab6_1663b001e40d0ad1.jpg"
+  }
 ]
