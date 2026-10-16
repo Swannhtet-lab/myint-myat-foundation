@@ -64,9 +64,213 @@
   },
   {
     "id": 10,
+      "year": 2023,
+      "category": "library",
+      "title": "အခမ်းအနား",
+      "image": "src/assets/ဖွင့်ပွဲ.jpg"
+  },
+  {
+    "id": 11,
+      "year": 2019,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/ayemyamon/နိုင်ငံခြားဘာသာတက္ကသိုလ်/ayemyamon-နိုင်ငံခြားဘာသာတက္ကသိုလ်-၂၀၁၆-၂၀၁၉.jpg"
+  },
+  {
+    "id": 12,
       "year": 2024,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/aunghtaymyint-ပညာရေးတက္ကသိုလ်(စစ်ကိုင်း)-၂၀၁၈-၂၀၂၄.jpg"
+  },
+  {
+    "id": 13,
+      "year": 2024,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/aungkyawkyaw-မန္တလာတက္ကသိုလ်(သင်္ချာ)-၂၀၁၈-၂၀၂၄.jpg"
+  },
+  {
+    "id": 14,
+      "year": 2022,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/ayethinzarkhaing-တိုင်းရင်းဆေးတက္ကသိုလ် (မန္တလေး)-၂၀၁၆-၂၀၂၂.jpg"
+  },
+  {
+    "id": 15,
+      "year": 2019,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/htayhtayhlaing-နိုင်ငံခြားဘာသာတက္ကသိုလ်-၂၀၁၆-၂၀၁၉.jpg"
+  },
+  {
+    "id": 16,
+      "year": 2023,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/mohmohmaung-တိုင်းရင်းဆေးတက္ကသိုလ်(မန္တလေး)-၂၀၂၈-၂၀၂၃.jpg"
+  },
+  {
+    "id": 17,
+      "year": 2020,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/myatmyattun-မန္တလေးတက္ကသိုလ်(မြန်မာစာထူးချွန်)-၂၀၁၆-၂၀၂၀.jpg"
+  },
+  {
+    "id": 18,
+      "year": 2020,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/nanyawaikhin-ပညာရေးတက္ကသိုလ်(စစ်ကိုင်း)-၂၀၂၈-၂၀၂၀.jpg"
+  },
+   {
+    "id": 19,
+      "year": 2018,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/nilaraung-ပညာရေးတက္ကသိုလ်(မန္တလေး)-၂၀၁၇-၂၀၁၈.jpg"
+  },
+   {
+    "id": 20,
+      "year": 2024,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/soaksaingnan-ကွန်ပျူတာတက္ကသိုလ်(မန္တလေး)-၂၀၁၇-၂၀၂၄.jpg"
+  },
+  {
+    "id": 21,
+      "year": 2018,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/thihanaing-ရတနာပုံတက္ကသိုလ်(အင်္ဂလိပ်စာ)-၂၀၁၇-၂၀၁၈.jpg"
+  },
+  {
+    "id": 22,
+      "year": 2019,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/thuzartun-သမဝါယမတက္ကသိုလ်(စစ်ကိုင်း)-၂၀၁၆-၂၀၁၉.jpg"
+  },
+  {
+    "id": 23,
+      "year": 2019,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/tinzarlin-ဆေးဘက်ဆိုင်ရာနည်းတက္ကသိုလ်-၂၀၁၉-၂၀၂၄.jpg"
+  },
+  {
+    "id": 24,
+      "year": 2018,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/zinmarchue-ပညာရေးကောလိပ်(မန္တလေး)-၂၀၁၇-၂၀၁၈.jpg"
+  },
+  {
+    "id": 25,
+      "year": 2023,
+      "category": "grudates",
+      "title": "ပညာရေးလှုပ်ရှားမှု",
+      "image": "src/assets/zwehtet-ဆေးတက္ကသိုလ်(မန္တလေး)-၂၀၁၆-၂၀၂၃.jpg"
+  },
+   {
+    "id": 26,
+      "year": 2025,
+      "category": "library",
+      "title": "ကျောင်းလှုပ်ရှားမှု",
+      "image": "src/assets/ကျောင်းများ-ဖောင်ဒေးရှင်းမှစာအုပ်လှူဒါန်းခြင်း.jpg"
+  },
+   {
+    "id": 27,
+      "year": 2025,
+      "category": "library",
+      "title": "ကျောင်းလှုပ်ရှားမှု",
+      "image": "src/assets/ကျောင်းများတွင်စာအုပ်လှူဒါန်းခြင်း.jpg"
+  },
+  {
+    "id": 28,
+      "year": 2025,
       "category": "library",
       "title": "စာကြည့်တိုက်",
-      "image": "src/assets/0-02-06-40f953ef6ddbcb5c473816913d94bd6952284c0da1be8e4f477263634970eab6_1663b001e40d0ad1.jpg"
+      "image": "src/assets/ကလေးစာဖတ်ခန်း.jpg"
+  },
+  {
+    "id": 29,
+      "year": 2025,
+      "category": "library",
+      "title": "စာကြည့်တိုက်",
+      "image": "src/assets/စာကြည့်တိုက်.jpg"
+  },
+  {
+    "id": 30,
+      "year": 2023,
+      "category": "library",
+      "title": "အခမ်းအနား",
+      "image": "src/assets/စာကြည့်တိုက်ဖွင့်ခြင်း.jpg"
+  },
+  {
+    "id": 31,
+      "year": 2023,
+      "category": "library",
+      "title": "အခမ်းအနား",
+      "image": "src/assets/စာကြည့်တိုက်ဖွင့်ပွဲ.jpg"
+  },
+   {
+    "id": 32,
+      "year": 2023,
+      "category": "library",
+      "title": "အခမ်းအနား",
+      "image": "src/assets/စာကြည့်တိုက်ဖွင့်ပွဲအခမ်းအနား --.jpg"
+  },
+   {
+    "id": 33,
+      "year": 2023,
+      "category": "library",
+      "title": "အခမ်းအနား",
+      "image": "src/assets/စာကြည့်တိုက်ဖွင့်ပွဲအခမ်းအနား.jpg"
+  },
+   {
+    "id": 34,
+      "year": 2025,
+      "category": "library",
+      "title": "ကျောင်းလှုပ်ရှားမှု",
+      "image": "src/assets/စာအုပ်လှူဒါန်းခြင်း.jpg"
+  },
+  {
+    "id": 35,
+      "year": 2025,
+      "category": "library",
+      "title": "ကျောင်းလှုပ်ရှားမှု",
+      "image": "src/assets/စာအုပ်လှူဒါန်းခြင်းမှတ်တမ်းတင်.jpg"
+  },
+   {
+    "id": 36,
+      "year": 2025,
+      "category": "library",
+      "title": "အခမ်းအနား",
+      "image": "src/assets/နဝမအကြိမ်ပညာသင်ဆုပေးအပ်ပွဲ-၂၀၂၅.JPG"
+  },
+   {
+    "id": 37,
+      "year": 2025,
+      "category": "library",
+      "title": "အခမ်းအနား",
+      "image": "src/assets/နာယကကြီး.JPG"
+  },
+  {
+    "id": 38,
+      "year": 2023,
+      "category": "library",
+      "title": "အခမ်းအနား",
+      "image": "src/assets/ဖောင်ဒေးရှင်းရုံးခန်းနှင့် စာကြည့်တိုက် ဖွင့်ပွဲ.jpg"
+  },
+  {
+    "id": 39,
+      "year": 2025,
+      "category": "library",
+      "title": "ကျောင်းလှုပ်ရှားမှု",
+      "image": "src/assets/မှတ်တမ်းတင်ပုံ.jpg"
   }
+ 
 ]
